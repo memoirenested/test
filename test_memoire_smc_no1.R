@@ -5,7 +5,7 @@ Evidence <- function(Y,u0=0,var0=1,var=1){
   S = sum(Y)
   S2 = sum(Y**2)
   n = length(Y)
-  vpost = 1/(1/var0+n/var) 
+  vpost = 1/(1/var0+n/var) #looool
   Z = -0.5*(u0**2/var0++S2/var) +0.5*(u0/var0+S/var)**2*vpost
   Z = Z - n/2*log(2*pi) - log(var0) -n*0.5*log(var) + 0.5*log(vpost)
   return(Z)
